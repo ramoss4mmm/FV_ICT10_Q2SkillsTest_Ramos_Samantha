@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>ICT 10 PYTHON</title>
+<style>
+    body{
+        display: flex;   
+        justify-content: center;
+        flex-direction: column; 
+        align-items: center;
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoR-PAL9otBfTEN_VvbgIbcG7zxDRzVMxbVA&s');
+        background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: fixed;
+    }
+    #container1{
+        padding: 25px;
+        border-radius: 12px;
+        background-color: #FFE4EF;
+        box-shadow: 0 0 10px #F39EB6;
+        text-align: center;
+        width: 600px;
+        color: #F39EB6;
+        font-weight: bold;
+    }
+    #clubinfo{
+        padding: 25px;
+        border-radius: 12px;
+        background-color: #F7F6D3;
+        box-shadow: 0 0 10px #B8DB80;
+        text-align: center;
+        width: 600px;
+        color: #B8DB80;
+        font-weight: bold;
+    }
+
+</style>
+</head>
+<body>
+<!-- main container -->
+<div id="container1">
+    <h1>School Club Information</h1>
+
+    <br>
+
+    <h2>School Clubs:</p>
+    <!-- dropdown form for the clubs -->
+    <select id="clubs1" class="form-select">
+        <option selected disabled>Select a Club...</option>
+        <option>Math Club</option>
+        <option>Science Club</option>
+        <option>Communications Arts Club</option>
+        <option>Social Science Club</option>
+        <option>Cadet Officer Candidate Course</option>
+        <option>Volleyball Varsity</option>
+        <option>Basketball Varsity</option>
+        <option>Marching Band</option>
+        <option>Glee Club</option>
+        <option>Dance Club</option>
+    </select>
+
+    <br>
+
+    <!-- runs the code -->
+    <button type="submit" class="btn btn-default" py-click="clubgen" style="color: #F39EB6; font-size: 25px;">Get School Club Information</button>
+</div>
+
+<br><br>
+
+<div id="clubinfo">
+    <h2>Club Information:</h2>
+</div>
+
+<script type="py" src="main.py"></script>
+</body>
+</html>
